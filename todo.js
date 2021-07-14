@@ -14,14 +14,64 @@ function eventListener(){//tum eevent listenerleri
 }
 function addTodo(e){
     const newTodo = todoInput.value.trim();
+
+    if (newTodo === ""){
+        // <div class="alert alert-danger" role="alert">
+        //             A simple danger alert—check it out!
+        //         </div>
     
-    addTodoToUI (newTodo);
-
-
-
-
-
+        showAlert("danger", "pls enter a todo");
+    }
+    else {
+        addTodoToUI(newTodo);
+        addTodoToStorage(newTodo);
+        showAlert("success","basariyla todo eklendi");
+    }
+        
     e.preventDefault();
+}
+function getTodosFromStorage(newTodo){//storagedan todolari alma
+    let todos;
+
+    if(localStorage.getItem("todos")===null){
+        todos = [];
+    }
+    else{
+        todos = JSON.parse(localStorage.getItem("todos"));
+    }
+    return todos;
+}
+
+function addTodoToStorage(newTodo){
+    let todos = getTodosFromStorage();
+    todos.push(newTodo);
+    localStorage.setItem("todos",JSON.stringify(todos));
+
+
+}
+function showAlert(type,message){
+    const alert = document.createElement("div");
+
+    alert.className = `alert alert-${type} `; 
+
+    alert.textContent = message;
+
+    firstCardBody.appendChild(alert);
+
+    
+
+    //setTimeout
+
+    setTimeout(function(){
+        alert.remove();
+    },1000);
+
+
+
+
+
+
+
 }
 function addTodoToUI(newTodo){
     //string degerini list item olarak UI yi ekleyecek

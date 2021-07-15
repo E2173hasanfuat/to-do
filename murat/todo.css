@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+  font-size: 1.15rem;
+  color: white;
+  text-align: center;
+  background-color: rgb(15, 109, 109);
+  background-image: url(./assets/work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 5rem;
+}
+/* toDo */
+.title {
+  padding-bottom: 2rem;
+}
+.title i {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color: rgb(255, 145, 0);
+}
+.input-area {
+  width: 30rem;
+  background: white;
+  color: black;
+  padding: 0 1rem;
+  border-radius: 5px;
+  height: 2.3rem;
+}
+.input {
+  width: 25rem;
+}
+.input-area button {
+  border: none;
+  outline: none;
+  background: white;
+}
+.input-area button:hover {
+  cursor: pointer;
+}
+.input-area input {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+/* array */
+.array {
+  margin-top: 1rem;
+}
+.sch {
+  font-size: 2rem;
+  color: rgb(255, 145, 0);
+}
+.box {
+  width: 30rem;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin: 1rem;
+  min-width: 2.3rem;
+  padding: 0.2rem 0.5rem;
+  /* cursor: pointer; */
+  text-transform: capitalize;
+  box-shadow: 0 0 1px 0.5px gainsboro;
+}
+.delete {
+  float: right;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.delete:hover {
+  background-color: rgb(255, 145, 0);
+  color: white;
+}
+.btn-left {
+  float: left;
+}
+.line-t {
+  text-decoration: line-through;
+  color: green;
+}
+/* footer */
+.footer {
+  margin-top: 1rem;
+}

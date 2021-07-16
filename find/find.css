@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: blue; */
+  background-color: seashell;
+}
+.container {
+  /* display: flex; */
+  /* background-image: url(./sayilar-680x365_c.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  height: 700px;
+  /* opacity: 0.6; */
+  /* background-color: tomato; */
+}
+.image {
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 100px;
+  width: 100%;
+}
+.container_text {
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  /* margin: auto; */
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+#button {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+}
+#text {
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+#count {
+  color: black;
+  display: inline-block;
+}
+.p {
+  display: inline-block;
+}
+#result {
+  color: red;
+}
